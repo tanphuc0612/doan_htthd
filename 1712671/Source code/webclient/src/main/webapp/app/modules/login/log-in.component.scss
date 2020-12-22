@@ -1,0 +1,26 @@
+.container {
+  padding-left: max(20px, calc(50% - 720px)) !important;
+  padding-right: max(20px, calc(50% - 720px)) !important;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 1rem;
+  #username,
+  #password {
+    width: 250px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: visible;
+    border: 1px #e5e6e6 solid;
+    background-color: #fcfcfd;
+  }
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #e0e1e1;
+  }
+  button:hover {
+    color: #027bc7;
+    background-color: #fcfcfd;
+  }
+}

@@ -6,9 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './modules/home/home.module';
+import { LogInModule } from './modules/login/log-in.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ReportModule } from './modules/report/report.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -16,7 +16,7 @@ import { ReportModule } from './modules/report/report.module';
     SharedModule,
     AppRoutingModule,
     HomeModule,
-    ReportModule,
+    LogInModule,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'vn',

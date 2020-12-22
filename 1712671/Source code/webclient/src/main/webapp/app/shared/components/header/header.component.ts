@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from './../../../core/services/auth.service';
 import { TranslateService } from '@ngx-translate/core';
 import { getApplicationURL } from './../../appUtil';
 import { CLIENT_URL } from './../../../app.constants';
@@ -29,9 +30,17 @@ export class HeaderComponent implements OnInit {
     login: this.translate.instant('tab.login'),
     profiles: this.translate.instant('tab.profiles'),
   };
+  hasLogin = false;
   userDetails: Taikhoan = new Taikhoan('', '');
 
-  constructor(public translate: TranslateService) {}
+  constructor(private authService: AuthService, public translate: TranslateService) {
+    this.authService.popup.subscribe(data => {
+      this.hasLogin = data;
+      if (this.hasLogin && localStorage.getItem('userInfo')) {
+        this.initUserData();
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.initLanguageData();
@@ -75,12 +84,12 @@ export class HeaderComponent implements OnInit {
   console(): void {
     console.log('1');
   }
-  // chooseUserOption($event: any) {
-  //   if ($event === 'logout') {
-  //     this.authService.logout();
-  //     location.reload();
-  //   }
-  // }
+  chooseUserOption($event: any) {
+    if ($event === 'logout') {
+      this.authService.logout();
+      location.reload();
+    }
+  }
 
   chooseApp($event: any) {
     const currentLanguage = this.translate.currentLang;
