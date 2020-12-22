@@ -1,0 +1,57 @@
+{
+  "boolean": {
+    "yes": "Có",
+    "no": "Không"
+  },
+  "error": {
+    "errorCodeMessage": "An error occurred ({{value}}). Please retry and contact your Loyco team if it still doesn't work.",
+    "messageFormatValidator": {
+      "messageSummary": "'{{value}}' is not in the expected date format.",
+      "messageDetail": "Enter a value in the same format as this example: '29/11/1998'"
+    },
+    "errorValueRequire": {
+      "title": "Bạn chưa nhập giá trị",
+      "content": "Giá trị không thể trống"
+    },
+    "errorLogIn": {
+      "title": "không thể đăng nhập",
+      "content": "Kiểm tra lại username hoặc password"
+    },
+    "errorSearch": {
+      "title": "không tìm thấy data",
+      "content": "kiểm tra lại thông tin nhập"
+    }
+  },
+  "lang": {
+    "en": "English",
+    "vn": "Vietnamese"
+  },
+  "login": {
+    "password": "Mật khẩu",
+    "signin": "Đăng nhập",
+    "username": "Tài khoản"
+  },
+  "menu": {
+    "changePassword": "Thay đổi mật khẩu",
+    "logout": "Đăng xuất"
+  },
+  "tab": {
+    "all": "Trang chủ",
+    "report": "Báo cáo",
+    "login": "Đăng nhập",
+    "profiles": "Tài khoản"
+  },
+  "welcome": "Xin chào {{value}}, rất vui vì bạn trở lại",
+  "button": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "submit": "Xác nhận",
+    "modify": "Chỉnh sửa"
+  },
+  "components": {
+    "searchByCmd": {
+      "title": "Tìm kiếm người theo cmnd"
+    }
+  },
+  "more": "Xem thêm"
+}

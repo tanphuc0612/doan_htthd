@@ -1,0 +1,44 @@
+<jhi-component-layout [loadFlag]="false" [size]="'large'" id="search-by-id">
+  <span class="title-component">{{ 'components.searchByCmd.title' | i18n }}</span>
+  <div class="content-component">
+    <input type="text" [(ngModel)]="cmnd" />
+    <button class="submit" (click)="submit()">{{ 'button.submit' | i18n }}</button>
+    <div>
+      <jhi-value-require
+        *ngIf="error"
+        [title]="'error.errorValueRequire.title'"
+        [content]="'error.errorValueRequire.content'"
+      ></jhi-value-require>
+    </div>
+    <div>
+      <table>
+        <caption style="margin-bottom: 10px">
+          <strong>people detail</strong>
+        </caption>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>RegistrationDate</th>
+          <th>Status</th>
+          <th>IdentityCard</th>
+        </tr>
+        <tr *ngIf="!visible && list.Id !== 0">
+          <td>{{ list.Id }}</td>
+          <td>{{ list.Name }}</td>
+          <td>{{ list.Address }}</td>
+          <td>{{ list.RegistrationDate }}</td>
+          <td>{{ list.Status }}</td>
+          <td>{{ list.IdentityCard }}</td>
+        </tr>
+      </table>
+      <div *ngIf="visible" style="margin-top: 10px">
+        <jhi-value-require
+          [title]="'error.errorSearch.title'"
+          [content]="'error.errorSearch.content'"
+        ></jhi-value-require>
+      </div>
+    </div>
+  </div>
+  <span class="footer-component">{{ 'more' | i18n }}</span>
+</jhi-component-layout>

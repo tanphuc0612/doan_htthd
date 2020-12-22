@@ -1,0 +1,56 @@
+{
+  "boolean": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "error": {
+    "messageFormatValidator": {
+      "messageSummary": "'{{value}}' is not in the expected date format.",
+      "messageDetail": "Enter a value in the same format as this example: '29/11/1998'"
+    },
+    "errorValueRequire": {
+      "title": "Value is required.",
+      "content": "You must enter a value."
+    },
+    "errorLogIn": {
+      "title": "can not access",
+      "content": "check your username or password"
+    },
+    "errorSearch": {
+      "title": "can not find",
+      "content": "check your value"
+    }
+  },
+  "lang": {
+    "en": "English",
+    "vn": "Vietnamese"
+  },
+  "login": {
+    "password": "Password",
+    "signin": "Sign in",
+    "username": "Username"
+  },
+  "menu": {
+    "changePassword": "Change my password",
+    "logout": "Sign out"
+  },
+  "tab": {
+    "all": "Home",
+    "report": "Report",
+    "login": "Login",
+    "profiles": "Profiles"
+  },
+  "welcome": "Hello {{value}}, nice to see you again",
+  "button": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "modify": "Modify"
+  },
+  "components": {
+    "searchByCmd": {
+      "title": "Search people by ID"
+    }
+  },
+  "more": "View more"
+}
